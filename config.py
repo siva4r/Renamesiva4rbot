@@ -7,27 +7,27 @@ import re, os
 
 id_pattern = re.compile(r'^.\d+$') 
 
-API_ID = os.environ.get("API_ID", "26238389")
+API_ID = os.environ.get("API_ID", "")
 
-API_HASH = os.environ.get("API_HASH", "f909ba0b8b6f142c47828a301d99b748")
+API_HASH = os.environ.get("API_HASH", "")
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "7658162911:AAGLPlZkcqXrae_hGH39pxH783SIBgvV8VE") 
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
 
-FORCE_SUB = os.environ.get("FORCE_SUB", "Allmovieshd25") 
+FORCE_SUB = os.environ.get("FORCE_SUB", "") 
 
              # Don't Remove Credit @VJ_Botz
              # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
              # Ask Doubt on telegram @KingVJ01
 
-DB_NAME = os.environ.get("DB_NAME", "Cluster2")     
+DB_NAME = os.environ.get("DB_NAME", "")     
 
-DB_URL = os.environ.get("DB_URL", "mongodb+srv://karthikstarz777:7282@cluster2.vkaew.mongodb.net/?retryWrites=true&w=majority&appName=Cluster2")
+DB_URL = os.environ.get("DB_URL", "")
  
 FLOOD = int(os.environ.get("FLOOD", "10"))
 
-START_PIC = os.environ.get("START_PIC", "https://graph.org/file/23230ea6fb908afff7f84-00a014e898d78f5588.jpg")
+START_PIC = os.environ.get("START_PIC", "")
 
-ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1429119149').split()]
+ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
 
 PORT = os.environ.get("PORT", "8080")
 
